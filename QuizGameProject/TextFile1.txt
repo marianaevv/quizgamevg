@@ -1,0 +1,61 @@
+using System.Linq;
+using UnityEngine.UI;
+using System.Collections;
+using UnityEngine;
+
+public class GameManager : MonoBehaviour {
+
+    public Question[] questions;
+    //public Answers[] answers;
+    //private static List<Question> unanseredQuestions;
+   // private Question currentQuestion;
+    //  private Answers ans;
+
+
+    private void Start()
+    {
+        
+    }
+    /*  [SerializeField]
+      private Text factText;
+      private void Start()
+      {
+
+          if (unanseredQuestions == null || unanseredQuestions.Count == 0)
+          {
+              unanseredQuestions = questions.ToList<Question>();
+          }
+          SetCurrentQuestion();
+            }
+
+      void SetCurrentQuestion()
+      {
+          int randomQuestionIndex = Random.Range(0, unanseredQuestions.Count);
+          currentQuestion = unanseredQuestions[randomQuestionIndex];
+
+          factText.text = currentQuestion.fact;
+          unanseredQuestions.RemoveAt(randomQuestionIndex);
+      }
+      /*public void UserSelectTrue()
+      {
+          if (currentQuestion.isRight)
+          {
+              Debug.Log("CORRECT");
+          }
+          else
+          {
+              Debug.Log("WRONG");
+          }
+      }
+      public void UserSelectFalse()
+      {
+          if (!currentQuestion.isRight)
+          {
+              Debug.Log("CORRECT");
+          }
+          else
+          {
+              Debug.Log("WRONG");
+          }
+      }*/
+}
