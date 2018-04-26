@@ -8,9 +8,10 @@ public class ScoreDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Text scoreText = GetComponent<Text> ();
+        
         scoreText.text = gameMaster.points.ToString();
         // scoreText.text = ScoreKeeper.score.ToString ();
-        gameMaster.Reset();
+      //  gameMaster.Reset();
 	}
 	
 	// Update is called once per frame

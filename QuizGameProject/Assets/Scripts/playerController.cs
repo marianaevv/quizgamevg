@@ -20,14 +20,14 @@ public class playerController : MonoBehaviour {
 
 
     //SCORE
-    public gameMaster gm;
+  //  public gameMaster gm;
 
 	// Use this for initialization
 	void Start () {
         myRB = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
        facingRight = true;
-     // gm =  GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
+      
 	}
     // Update is called once per frame
   private void Update()
@@ -63,19 +63,5 @@ public class playerController : MonoBehaviour {
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-    //Method that define the score that each egg gives and add to the score.
-   /* private void OnTriggerEnter2D(Collider2D col) {
-        if (col.CompareTag("Egg"))
-        {
-            Destroy(col.gameObject);
-            // gm.points += 1; }
-            gameMaster.points += 5;
-        }
-        else if (col.CompareTag("GoldenEgg"))
-        {
-            Destroy(col.gameObject);
-            //  gm.points += 5;
-            gameMaster.points += 15;
-        }
-     }*/
+
 }

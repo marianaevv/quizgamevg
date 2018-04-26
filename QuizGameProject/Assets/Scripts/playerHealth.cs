@@ -10,7 +10,7 @@ public class playerHealth : MonoBehaviour {
     playerController controlMovement;
 
     //Canvas variables
-    public Slider healthSlider;
+  //  public Slider healthSlider;
     public Image damageScreen;
   //  public AudioClip playerHurt;
 
@@ -24,8 +24,8 @@ public class playerHealth : MonoBehaviour {
         currentHealth = fullHealth;
         controlMovement = GetComponent<playerController>();
         //Inicializando
-       healthSlider.maxValue = fullHealth;
-        healthSlider.value = fullHealth;
+     //  healthSlider.maxValue = fullHealth;
+       // healthSlider.value = fullHealth;
         damaged= false;
      //   playerAS = GetComponent<AudioSource>();
     }
@@ -36,7 +36,7 @@ if (damaged){
             damageScreen.color = damageColor;
         }
         else {
-            damageScreen.color = Color.Lerp(damageScreen.color, Color.clear, smoothColor * Time.deltaTime);
+         //   damageScreen.color = Color.Lerp(damageScreen.color, Color.clear, smoothColor * Time.deltaTime);
         }
         damaged= false;
     }
@@ -46,7 +46,7 @@ if (damaged){
         if (currentHealth > fullHealth){
             currentHealth = fullHealth;
         }
-            healthSlider.value = currentHealth;
+          //  healthSlider.value = currentHealth;
        }
     public void addDamage(float damage)
     {
@@ -57,7 +57,7 @@ if (damaged){
        // playerAS.Play();
           
 
-        healthSlider.value = currentHealth;
+      //  healthSlider.value = currentHealth;
         damaged= true;
 
         if (currentHealth <= 0)    {

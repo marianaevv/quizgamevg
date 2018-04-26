@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;		// Requiered to switch scenes
 using System.Collections;
 
+
 public class LevelManager : MonoBehaviour {
 
     public void LoadLevel(string name)
@@ -10,13 +11,19 @@ public class LevelManager : MonoBehaviour {
         Application.LoadLevel(name);
     }
   
-    public static void LoadNextLevel()
+    public  void LoadNextLevel()
     {
-  
-             Application.LoadLevel(Application.loadedLevel + 1);
+
+        StartCoroutine(ExecuteAfterTime(2));
 
     }
 
-    
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+      //  Application.LoadLevel(Application.loadedLevel + 1);
+        SceneManager.LoadScene(Application.loadedLevel + 1);
+        // Code to execute after the delay
+    }
 
 }
