@@ -15251,10 +15251,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: GEOGRA
-    aa: JJ
-    bb: KK
-    cc: MM
+  - fact: Capital de Brasil
+    aa: Rio de Janeiro
+    bb: Mexico
+    cc: Buenos Aires
     a: 1
     b: 0
     c: 0
@@ -41108,10 +41108,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: bONUS
-    aa: A
-    bb: B
-    cc: C
+  - fact: Mother of Dragons
+    aa: Cersei Lannister
+    bb: Aria Stark
+    cc: Daenerys Targaryen
     a: 0
     b: 0
     c: 1
@@ -79857,9 +79857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346e0f36b655c1f458b781272f1a2f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHealth: 20
-  deathFx: {fileID: 1920128809080366, guid: 254ac8bcfedda1f498ca1708defe6262, type: 2}
-  damageScreen: {fileID: 0}
 --- !u!1 &1669867938
 GameObject:
   m_ObjectHideFlags: 0
@@ -99413,10 +99410,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: HISTORIA
-    aa: A
-    bb: B
-    cc: C
+  - fact: Padre de la patria
+    aa: Miguel Hidalgo
+    bb: Agustin de Iturbide
+    cc: Jose Ma. Morelos
     a: 1
     b: 0
     c: 0

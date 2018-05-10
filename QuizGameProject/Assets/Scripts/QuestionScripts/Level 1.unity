@@ -65078,7 +65078,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullHealth: 20
   deathFx: {fileID: 1920128809080366, guid: 254ac8bcfedda1f498ca1708defe6262, type: 2}
+  currentHealth: 0
+  controlMovement: {fileID: 0}
   damageScreen: {fileID: 937427573}
+  damaged: 0
+  damageColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0.5
+  smoothColor: 5
 --- !u!1 &1669242276
 GameObject:
   m_ObjectHideFlags: 0
